@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tienda Online</h1>
+        <div class="cart-icon" onclick="toggleCart()">
+            🛒 <span id="cart-count">0</span>
+        </div>
+        <div id="cart-items" class="cart-items"></div>
+    </header>
+    <div class="product">
+        <h2>Producto 1</h2>
+        <img src="ruta/a/imagen1.jpg" alt="Producto 1">
+        <p>Precio: $10</p>
+        <button onclick="addToCart('Producto 1', 'ruta/a/imagen1.jpg', 10)">Agregar al carrito</button>
+    </div>
+    <div class="product">
+        <h2>Producto 2</h2>
+        <img src="ruta/a/imagen2.jpg" alt="Producto 2">
+        <p>Precio: $20</p>
+        <button onclick="addToCart('Producto 2', 'ruta/a/imagen2.jpg', 20)">Agregar al carrito</button>
+    </div>
+    <button onclick="sendToWhatsApp()">Enviar a WhatsApp</button>
+    <button onclick="checkout()">Pagar</button>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
